@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Malaria Test Result🔥</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/gif">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .jumbotron {
+      background: linear-gradient(to right, #00796b, #009688);
+      color: white;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .jumbotron h2 {
+      font-size: 42px;
+      font-weight: 600;
+    }
+
+    .container h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .container p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .container img {
+      display: block;
+      margin: 30px auto;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #eeeeee;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    a {
+      color: #00796b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h2>Prediction Result: {{ prediction }}</h2>
+  </div>
+
+  <div class="container">
+    <h2>Understanding the Working of the Application</h2>
+    <p>
+    </p>
+    
+    <img src="{{url_for('static', filename='analysis.jpg')}}" alt="Confusion Matrix and Accuracy Graph">
+    <p class="caption"><b>Figure:</b> The Confusion Matrix and Validation Accuracy Graph</p>
+
+    <h2>Application Working</h2>
+    <p>In many parts of the world, malaria continues to be a major health threat, particularly in tropical regions. However, the symptoms of malaria, such as fever and chills, often overlap with those of other diseases, making early diagnosis challenging. Traditional diagnostic methods, while effective, can be time-consuming and require skilled personnel. Our application leverages the power of artificial intelligence to provide a quick, accurate, and automated solution, ensuring timely detection and treatment, ultimately improving patient outcomes.
+    </p>
+  </div>
+
+  <footer class="text-center">
+    <p>Made with <span style="color:red;">&#9829;</span> by 
+      <a href="https://github.com/" target="_blank">our team</a>
+    </p>
+  </footer>
+
+</body>
+</html>
